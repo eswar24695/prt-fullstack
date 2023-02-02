@@ -48,12 +48,12 @@ return(
             </div>
             <div className="home-body">
                 <div className="sidebar">
-                    <h1>History</h1>
-                    <button onClick={() => { localStorage.clear(); navigate("/") }}>Logout</button>
+                    <h1 style={{"marginLeft":"5rem"}}>History</h1>
+                    <button className="deletebutton" onClick={() => { localStorage.clear(); navigate("/") }}>Logout</button>
                 </div>
                 <div className="activity-main">
                     <div className="input">
-                        <input type="text" name="Activity" onChange={(e)=>{setInputtext({inputtext, Activity:e.target.value})}}/>
+                        <input className="searchbar" type="text" name="Activity" onChange={(e)=>{setInputtext({inputtext, Activity:e.target.value})}}/>
                         <button onClick={()=>{sendtask(inputtext)}}>Add new activity</button>
                     </div>
                     <table>

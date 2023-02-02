@@ -18,20 +18,21 @@
     height:100%
 }
 .sidebar{
-    display: inline;
+    display: inline-block;
     width:30vw;
     height:90vh;
     background-color: bisque;
 }
 .activity-main{
-    display: inline;
+    display: inline-block;
     height:90vh;
     width:70vw;
     background-color: beige;
 }
 .input{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    margin-left: 20rem;
 }
  table,td,th{
     border: 1px solid black;
@@ -39,4 +40,14 @@
  }
 table{
     margin:auto
+}
+.deletebutton{
+    margin-top: 70vh;
+    margin-left: 5vw;
+    width: 15rem;
+    height: 2rem;
+}
+.searchbar{
+    height: 2rem;
+    width: 15rem;
 }
