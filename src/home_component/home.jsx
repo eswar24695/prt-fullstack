@@ -18,7 +18,7 @@ const Home = () => {
         }
     }
         useEffect(()=>{
-            axios.get("http://localhost:6800/tasks/all",config)
+            axios.get("https://todobackend-8h8i.onrender.com/tasks/all",config)
             .then((res)=>{
                 console.log(res.data.data)
                 setgetalltask(res.data.data);
@@ -28,7 +28,7 @@ const Home = () => {
             })
         },[])
         const sendtask=async(inputtext)=>{
-            await axios.post("http://localhost:6800/tasks/addtask",inputtext,config)
+            await axios.post("https://todobackend-8h8i.onrender.com/tasks/addtask",inputtext,config)
             .then((res)=>{
                 setgetalltask([...getalltasks,res.data.data]);
                 console.log(res.data.data);

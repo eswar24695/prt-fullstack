@@ -19,7 +19,7 @@ const Login=()=>{
     const submitHandler=async (e)=>{
         e.preventDefault();
         const { name, password } = login_details;
-        await fetch(`http://localhost:6800/login`, {
+        await fetch(`https://todobackend-8h8i.onrender.com/login`, {
         method: "POST",
         body: JSON.stringify({
             name: name,

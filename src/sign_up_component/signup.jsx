@@ -36,7 +36,7 @@ const Signup=()=>{
         e.preventDefault();
        if(accept && errormessage===''){
         const {username,password}= userdetails;
-        await fetch(`http://localhost:6800/register`,{
+        await fetch(`https://todobackend-8h8i.onrender.com/register`,{
             method:"POST",
             body: JSON.stringify({
                 name:username,
