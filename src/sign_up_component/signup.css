@@ -1,0 +1,30 @@
+.signup_body{
+    height: 100%;
+    width: 100%;
+}
+.signup_container{
+    border: 1px solid grey;
+    background-color: #fff;
+    width:50vh;
+    height:320px;
+    margin: 15% auto;
+    padding-left: 8rem;
+    background-color: orange;
+}
+.signup_cred{
+    width:15rem;
+    height: 2rem;
+    margin: 5px;
+    text-align: center;
+}
+/* .signup_submit{
+    margin-left: 5rem;
+    background-color: rgb(97, 97, 249);
+} */
+.submit_button{
+    background-color: rgb(97, 97, 249);
+    width: 15rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
